@@ -1,0 +1,116 @@
+<div class="contact_wrapper" style="display: block;">
+	
+	<div class="contact_AppBody" >
+			
+			
+			<!-- This is static header, it will be shown always -->
+			<div class="contact_header" >			
+				<div style="position: absolute; left: 10px; color: white; float: left; font-size: 44px;"
+			id="back_contactDetail">
+			<!-- i class="icon-circle-arrow-left" /-->
+			<i class="icon-circle-arrow-left"></i>
+			
+			</div>
+			<div class="contact_textHeader">
+				<h4>내 주소록</h4>
+			</div>
+			<div style="position: absolute; right: 10px; top:0px;color: white; float: left; font-size: 44px;">
+					<i class="icon-trash icon-contactDel-click" />
+			</div>
+			</div> <!--  end of scheduler_header -->
+			
+			<!-- This is a placeholder for dynamic page content -->
+			<div  class="contact_pagePort">			
+				<div class="addcontact_wrapper" id="addcontactScroll">
+				<div class="form-fields">
+				<i class="icon-user"></i> 이름                
+				<input class="input-block contactInput" type="text" placeholder="" id="In_NameKo" readonly = "readonly">
+				</div>
+    			<div class="form-fields">			
+				<i class="icon-user"></i> 영문이름                
+				<input class="input-block contactInput" type="text" placeholder="" id="In_NameEn" readonly = "readonly">
+				 </div>
+    			<div class="form-fields">    
+				<i class="icon-phone"></i> 전화번호                
+				<input class="input-block contactInput" type="text" placeholder="" id="In_Phone" readonly = "readonly">
+				</div>
+    			<div class="form-fields">  
+					<i class="icon-envelope"></i> Email                
+				<input class="input-block contactInput" type="text" placeholder="" id="In_Email" readonly = "readonly">
+				 </div>
+    		<div class="form-fields">               
+				<i class="icon-group"></i> 부서
+					<input class="input-block contactInput" type="text" placeholder="" id="In_Dept" readonly = "readonly" >
+					</div>
+    		<div class="form-fields">    										
+				<i class="icon-asterisk"></i> 직급
+				<input type="text" placeholder="" class="input-block contactInput"   id="In_Title" readonly = "readonly">
+				</div>
+    			<div class="form-fields">
+				<i class="icon-key"></i> 사원번호
+				<input type="text" placeholder="" class="input-block contactInput"   id="In_No" readonly = "readonly">
+				 </div>
+    			<div class="form-fields">				
+				<i class="icon-calendar"></i > 입사일자
+				<input type="text" class="input-block contactInput date_input"   id="In_HiredDate" readonly = "readonly">
+				</div>
+    			<div class="form-fields">
+				<i class="icon-heart-empty"></i> 성별
+				<select class="as_categoryfield" id="In_Sex" data-furatto='select' disabled >
+				   <option>남</option>
+       			   <option>여</option>
+				</select>				
+				</div>    
+    <div class="form-fields" id="selGroup" >				
+				<i class="icon-paper-clip"></i> 그룹
+				<select class="as_categoryfield" id="In_Group" data-furatto='select' disabled >
+				   <option>일반</option>
+       			   <option>관리자</option>
+				</select>	
+			 </div>    
+    <div class="form-fields addField">			
+				<i class="icon-unlock-alt"></i> 기존 암호                
+				<input class="input-block contactInput" type="password" placeholder="" id="In_Opwd" readonly = "readonly">
+				 </div>
+    <div class="form-fields updateField">  
+					<i class="icon-lock"></i> 새 암호 1               
+				<input class="input-block contactInput" type="password" placeholder="" id="In_Npwd1" readonly = "readonly">
+				</div>
+    <div class="form-fields updateField">               
+				<i class="icon-lock"></i> 새 암호 2
+					<input class="input-block contactInput" type="password" placeholder="" id="In_Npwd2" readonly = "readonly">
+					 </div>  
+    <div class="form-fields updateField"> 
+			<i class="icon-file-alt"></i> 사진 파일
+			<input type="file" id="In_imgFile"  accept="image/*" capture="camera" readonly = "readonly"  />
+     		 <label>(파일 크기는 0.3 MB(300 kb) 이하로 올리세요.)</label>     		
+			 </div>
+   
+			 	
+					<div class="bottom_beforediv">
+					</div>		<!-- bottom_beforediv -->
+					
+				</div>	<!-- addscheduler_wrapper end -->
+			</div> <!--  scheduler_pagePort end -->
+   			
+   			
+   			 <div class="contact_footer" id="addcontact_footer">
+				<div class="footer_btngroup">
+					<div class="footerlayout_center">
+						
+					   <!-- li><a href="#" class="btn btn-success btn_inputCancelsc" id="footerbtn_addschedulercl"><i class="icon-remove"></i>Cancel</a></li-->
+					  	 <div class="form-fields">		   
+					   <a href="#" class="btn btn-success btn_addschedulerbtn btn-contactUpdate" id="Bt_contactUpdate"><i class="icon-edit"></i>수정하기</a>
+					  </div>
+
+						</div>  <!--  end of footerlayout_center -->
+				</div> <!--  end of footer_btngroup -->
+			</div> <!--  end of scheduler_footer -->
+				
+				
+			
+			</div>  <!--  end of scheduler_AppBody -->
+			
+			
+			
+</div> <!--  end of scheduler_wrapper -->

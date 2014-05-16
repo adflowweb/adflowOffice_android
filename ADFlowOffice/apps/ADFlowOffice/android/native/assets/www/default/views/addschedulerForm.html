@@ -1,0 +1,79 @@
+<div class="scheduler_wrapper" style="display: block;">
+	
+	<div class="scheduler_AppBody" >
+			
+			
+			<!-- This is static header, it will be shown always -->
+			<div class="scheduler_header" >			
+				<div style="position: absolute; left: 10px; color: white; float: left; font-size: 44px;"
+			id="backbtnOnaddscheduler">
+			<!-- i class="icon-circle-arrow-left" /-->
+			<i class="icon-circle-arrow-left"></i>
+			
+			</div>
+			<div class="scheduler_textHeader">
+				<h4>새로운 이벤트</h4>
+			</div>
+			</div> <!--  end of scheduler_header -->
+			
+			<!-- This is a placeholder for dynamic page content -->
+			<div  class="scheduler_pagePort">			
+				<div class="addscheduler_wrapper" id="addschedulerScroll">
+				<div id="addsc_iscrolldivout">
+				
+				<i class="icon-user"></i> 사용자                
+				<input type="text" placeholder="A text input" name="username" class="input-block username" id="scheduler_mduser">           
+				<i class="icon-heart"></i> 항목
+				<select class="as_categoryfield" id="as_categoryfield" data-furatto='select'>
+				  <option value="workoutside">외근</option>
+				  <option value="dayoff">휴가</option>
+				  <option value="longproject">장기 프로젝트</option>
+				</select>								
+				<i class="icon-comment"></i> 이벤트
+				<input type="text" placeholder="이벤트" class="input-block sc_addevent">
+				
+					<i class="icon-calendar"></i> 시작일
+					<input type="text" id="datepicker1" class="scheduler_calendar"> 
+				<i class="icon-calendar"></i > 종료일
+				<input type="text" id="datepicker2" class="scheduler_calendar">
+			
+			
+			
+				<!-- input  type="date"  min="2014-01-01" max="2014-12-31"value="2014-01-03" class="scheduler_calendar"-->
+			
+			
+			 	<label id="addschedulerElapsedTime" class="text-center" style="font-size: 12px" />
+					<div class="bottom_beforediv">
+					</div>		<!-- bottom_beforediv -->
+					
+					</div>		<!-- addsc_iscrolldivout end -->
+				</div>	<!-- addscheduler_wrapper end -->
+			</div> <!--  scheduler_pagePort end -->
+   			
+   			
+   			 <div class="scheduler_footer" id="addscheduler_footer">
+				<div class="footer_btngroup">
+					<div class="footerlayout_center">
+						<ul class="btn-group btn-group-square">
+					   <!-- li><a href="#" class="btn btn-success btn_inputCancelsc" id="footerbtn_addschedulercl"><i class="icon-remove"></i>Cancel</a></li-->
+					   <li id="footerOneli_full"><a href="#" class="btn btn-success btn_addschedulerbtn" id="footerOnea_full"><i class="icon-ok"></i>등록하기</a></li>
+					   </ul>
+					<!-- need to full botn group size of line ..50 vs 50-->
+						<!-- a href="#" class="btn btn-success btn_inputCancelsc">Cancel</a>
+						<a href="#" class="btn btn-success btn_addschedulerbtn">Add</a-->
+					<!-- ul class="btn-group btn-group-square">
+					   <li><a href="#" class="btn btn-success btn_inputScheduler">입력</a></li>
+					   <li><a href="#" class="btn btn-success  btn_modifyScheduler">수정</a></li>
+					   <li><a href="#" class="btn btn-success  btn_deleteScheduler">삭제</a></li>
+					</ul-->	
+						</div>  <!--  end of footerlayout_center -->
+				</div> <!--  end of footer_btngroup -->
+			</div> <!--  end of scheduler_footer -->
+				
+				
+			
+			</div>  <!--  end of scheduler_AppBody -->
+			
+			
+			
+</div> <!--  end of scheduler_wrapper -->

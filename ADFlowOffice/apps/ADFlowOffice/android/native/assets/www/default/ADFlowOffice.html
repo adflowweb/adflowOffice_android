@@ -1,0 +1,125 @@
+<!DOCTYPE HTML><html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <title>index</title>
+        <script>
+		// Define WL namespace.
+		var WL = WL ? WL : {};
+		/**
+		 * WLClient configuration variables.
+		 * Values are injected by the deployer that packs the gadget.
+		 */
+		WL.StaticAppProps = {
+   "APP_DISPLAY_NAME": "ADFlowOffice",
+   "APP_ID": "ADFlowOffice",
+   "APP_SERVICES_URL": "\/apps\/services\/",
+   "APP_VERSION": "1.01",
+   "ENVIRONMENT": "android",
+   "LOGIN_DISPLAY_TYPE": "embedded",
+   "WORKLIGHT_NATIVE_VERSION": "4186851560-2746434164",
+   "WORKLIGHT_PLATFORM_VERSION": "6.1.0.01.20140311-2356",
+   "WORKLIGHT_ROOT_URL": "\/apps\/services\/api\/ADFlowOffice\/android\/"
+};</script>
+		<script src="worklight/cordova.js"></script>
+		<script src="worklight/wljq.js"></script>
+		<script src="worklight/worklight.js"></script>
+		<script src="worklight/checksum.js"></script>
+		<script src="worklight/jsonstore.js"></script>
+		<script type="text/javascript">
+	var beforeload = new Date().getTime();
+	window.onload = gettimeload;
+	function gettimeload() {
+		var aftrload = new Date().getTime();
+		// Time calculating in seconds
+		time = (aftrload - beforeload) / 1000;
+		document.getElementById("loginElapsedTime").innerHTML = "Your Page took <font color='red'><b>"
+				+ time + "</b></font> Seconds to Load";
+	}
+</script>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
+        <link href="worklight/worklight.css" rel="stylesheet">
+        <link href="images/favicon.png" rel="shortcut icon">
+        <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+<!-- Jindo js -->
+        <script src="js/jindo.desktop.min.js" type="text/javascript"></script>
+<script src="js/jindo_mobile_component.js" type="text/javascript"></script>
+<!-- Jindo js end -->
+<script>
+	window.$ = window.jQuery = WLJQ;
+</script>
+<!-- furatto css -->
+        <link href="css/furatto/normalize.css" rel="stylesheet">
+        <link href="css/furatto/furatto.css" rel="stylesheet">
+        <link href="css/furatto/font-awesome.css" rel="stylesheet">
+        <link href="css/furatto/group_buttons.css" rel="stylesheet">
+<!-- furatto css end -->
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/scheduler.css" rel="stylesheet">
+        <link href="css/contactList.css" rel="stylesheet">
+        <link href="css/jquery-ui.css" rel="stylesheet">
+    </head>
+    <body id="content" style="display: none;">
+	<!-- You better not move this -->
+        <div class="panels">
+            <div class="panel panel-inverse panel-left"></div>
+        </div>
+	<!-- Seriously don't move the code above -->
+        <div class="panel-content">
+            <div class="page" id="page1">
+                <div>
+                    <div class="row login">
+                        <div class="row">
+                            <div class="col-1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1"></div>
+                        </div>
+                        <h2 class="text-center" style="font-size: 40px;">에이디플로우</h2>
+                        <div class="row">
+                            <div class="col-1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1"></div>
+                        </div>
+                        <div class="form-fields">
+                            <label for="email" style="font-size: 18px;"><i class="icon-user"></i>&nbsp;&nbsp;아이디 </label> <input class="input-block" id="user" name="" type="email" value="">
+                        </div>
+                        <div class="form-fields">
+                            <label for="password" style="font-size: 18px;"><i class="icon-lock"></i>&nbsp;&nbsp;패스워드 </label> <input class="input-block" id="password" name="" type="password" value="">
+                        </div>
+					<!-- <div class="checkbox-fields">
+						<label for="check"> <input type="checkbox" id="check">
+							아이디저장
+						</label>
+					</div> -->
+                        <div class="row">
+                            <div class="col-1"></div>
+                        </div>
+                        <a class="btn btn-success btn-block" id="loginBtn" style="font-size: 18px;">로그인</a> 
+                        <br> 
+                        <br> 
+                        <label class="text-center" id="loginElapsedTime" style="font-size: 8px">
+				</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/initOptions.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/LoginRealmChallengeProcessor.js"></script>
+	<script src="js/messages.js"></script>
+	<script src="js/navigation.js"></script>
+	<!-- script src="js/fastclick.js"></script-->
+	<!-- furatto js -->
+<!-- 	<script src="js/furatto/furatto.min.js"></script> -->
+	<!-- furatto js end -->
+	<!-- backbone js -->
+	<script src="js/backbone/underscore-min.js"></script>
+	<script src="js/backbone/backbone.js"></script>
+	<!-- backbone js end -->
+    </body>
+</html>

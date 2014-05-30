@@ -81,11 +81,11 @@ function submitAuthentication(username, password,deviceID) {
 		//token Adapter call -start
 		WL.Logger.info("token Adapter call -start");
 		WL.Logger.warn(deviceID);
-		var jsonData = '{"userID":"'+username+'","deviceID":"'+deviceID+'"}';
-		
+		//var jsonData = '{"userID":"'+username+'","deviceID":"'+deviceID+'"}';
+		var tokenParam='{"userID":"'+val.resultSet[0].nameen+'","password":"'+password+'"}';
 		var tokenID;
 		try {
-			var val2 = getToken(jsonData);
+			var val2 = getToken(tokenParam);
 			WL.Logger.warn(val2);
 			tokenID = val2.result.data.tokenID;
 		} catch (e) {

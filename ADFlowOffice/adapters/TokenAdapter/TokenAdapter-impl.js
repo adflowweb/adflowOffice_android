@@ -36,16 +36,19 @@
  */
 function tokenAuthentication(param) {
 		
-	 //var jsonData = '{"userID":"kicho","deviceID":"test"}';
-	WL.Logger.info("param: "+ param);
-		var jsonData = param;
+
+	
 		var input = {
 		    method : 'post',
+		    headers: {
+	            'X-ApiKey': 'devServer',  
+	          
+	        },
 		    returnedContentType : 'json',
-		    path : '/v1/tokens',
+		    path : '/v1/auth',
 		    body : {
 				contentType : 'application/json',
-				content : jsonData
+				content : param
 			}
 		    
 		};
